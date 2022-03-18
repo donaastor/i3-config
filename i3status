@@ -1,0 +1,45 @@
+general {
+	output_format = "i3bar"
+	interval = 1
+	separator = " | "
+}
+
+order += "cpu_temperature 0"
+order += "cpu_temperature 1"
+order += "cpu_usage"
+order += "memory"
+order += "disk /"
+order += "time"
+
+disk "/" {
+	format = "disk: %used"
+	prefix_type = custom
+}
+
+cpu_usage {
+	format = "cpu: %usage"
+	max_threshold = 80
+	degraded_threshold = 60
+}
+
+cpu_temperature 0 {
+	format = "cpu1: %degrees"
+	max_threshold = 42
+	path = "/sys/class/hwmon/hwmon1/temp3_input"
+}
+
+cpu_temperature 1 {
+	format = "cpu2: %degrees"
+	max_threshold = 42
+	path = "/sys/class/hwmon/hwmon1/temp4_input"
+}
+
+memory {
+	format = "ram: %used/%total"
+	unit = "auto"
+	decimals = 1
+}
+
+time {
+	format = "%Y-%m-%d %H:%M:%S"
+}
