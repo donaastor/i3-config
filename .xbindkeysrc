@@ -1,0 +1,128 @@
+"setxkbmap us; echo U > /tmp/i3statusP"
+	Alt+F9
+"setxkbmap ru; echo U > /tmp/i3statusP"
+	Alt+F10
+"setxkbmap -layout rs -variant latin; echo U > /tmp/i3statusP"
+	Alt+F11
+"setxkbmap -layout rs -variant yz; echo U > /tmp/i3statusP"
+	Alt+F12
+
+"setxkbmap us; echo U > /tmp/i3statusP"
+	Alt+KP_Insert
+"setxkbmap ru; echo U > /tmp/i3statusP"
+	Alt+KP_End
+"setxkbmap -layout rs -variant latin; echo U > /tmp/i3statusP"
+	Alt+KP_Down
+"setxkbmap -layout rs -variant yz; echo U > /tmp/i3statusP"
+	Alt+KP_Next
+
+"flameshot gui"
+	Print
+"pactl set-source-mute @DEFAULT_SOURCE@ toggle"
+	Pause
+
+"xvkbd -xsendevent -text "\Ca""
+	m:0x04 + c:38
+"xvkbd -xsendevent -text "\Cb""
+	m:0x04 + c:56
+"xvkbd -xsendevent -text "\Cc""
+	m:0x04 + c:54
+"xvkbd -xsendevent -text "\Cd""
+	m:0x04 + c:40
+"xvkbd -xsendevent -text "\Ce""
+	m:0x04 + c:26
+"xvkbd -xsendevent -text "\Cf""
+	m:0x04 + c:41
+"xvkbd -xsendevent -text "\Cg""
+	m:0x04 + c:42
+"xvkbd -xsendevent -text "\Ch""
+	m:0x04 + c:43
+"xvkbd -xsendevent -text "\Ci""
+	m:0x04 + c:31
+"xvkbd -xsendevent -text "\Cj""
+	m:0x04 + c:44
+"xvkbd -xsendevent -text "\Ck""
+	m:0x04 + c:45
+"xvkbd -xsendevent -text "\Cl""
+	m:0x04 + c:46
+"xvkbd -xsendevent -text "\Cm""
+	m:0x04 + c:58
+"xvkbd -xsendevent -text "\Cn""
+	m:0x04 + c:57
+"xvkbd -xsendevent -text "\Co""
+	m:0x04 + c:32
+"xvkbd -xsendevent -text "\Cp""
+	m:0x04 + c:33
+"xvkbd -xsendevent -text "\Cq""
+	m:0x04 + c:24
+"xvkbd -xsendevent -text "\Cr""
+	m:0x04 + c:27
+"xvkbd -xsendevent -text "\Cs""
+	m:0x04 + c:39
+"xvkbd -xsendevent -text "\Ct""
+	m:0x04 + c:28
+"xvkbd -xsendevent -text "\Cu""
+	m:0x04 + c:30
+"xvkbd -xsendevent -text "\Cv""
+	m:0x04 + c:55
+"xvkbd -xsendevent -text "\Cw""
+	m:0x04 + c:25
+"xvkbd -xsendevent -text "\Cx""
+	m:0x04 + c:53
+"xvkbd -xsendevent -text "\Cy""
+	m:0x04 + c:29
+"xvkbd -xsendevent -text "\Cz""
+	m:0x04 + c:52
+
+"xvkbd -xsendevent -text "\Aa""
+	m:0x08 + c:38
+"xvkbd -xsendevent -text "\Ab""
+	m:0x08 + c:56
+"xvkbd -xsendevent -text "\Ac""
+	m:0x08 + c:54
+"xvkbd -xsendevent -text "\Ad""
+	m:0x08 + c:40
+"xvkbd -xsendevent -text "\Ae""
+	m:0x08 + c:26
+"xvkbd -xsendevent -text "\Af""
+	m:0x08 + c:41
+"xvkbd -xsendevent -text "\Ag""
+	m:0x08 + c:42
+"xvkbd -xsendevent -text "\Ah""
+	m:0x08 + c:43
+"xvkbd -xsendevent -text "\Ai""
+	m:0x08 + c:31
+"xvkbd -xsendevent -text "\Aj""
+	m:0x08 + c:44
+"xvkbd -xsendevent -text "\Ak""
+	m:0x08 + c:45
+"xvkbd -xsendevent -text "\Al""
+	m:0x08 + c:46
+"xvkbd -xsendevent -text "\Am""
+	m:0x08 + c:58
+"xvkbd -xsendevent -text "\An""
+	m:0x08 + c:57
+"xvkbd -xsendevent -text "\Ao""
+	m:0x08 + c:32
+"xvkbd -xsendevent -text "\Ap""
+	m:0x08 + c:33
+"xvkbd -xsendevent -text "\Aq""
+	m:0x08 + c:24
+"xvkbd -xsendevent -text "\Ar""
+	m:0x08 + c:27
+"xvkbd -xsendevent -text "\As""
+	m:0x08 + c:39
+"xvkbd -xsendevent -text "\At""
+	m:0x08 + c:28
+"xvkbd -xsendevent -text "\Au""
+	m:0x08 + c:30
+"xvkbd -xsendevent -text "\Av""
+	m:0x08 + c:55
+"xvkbd -xsendevent -text "\Aw""
+	m:0x08 + c:25
+"xvkbd -xsendevent -text "\Ax""
+	m:0x08 + c:53
+"xvkbd -xsendevent -text "\Ay""
+	m:0x08 + c:29
+"xvkbd -xsendevent -text "\Az""
+	m:0x08 + c:52
