@@ -21,108 +21,108 @@
 "pactl set-source-mute @DEFAULT_SOURCE@ toggle"
 	Pause
 
-"xvkbd -xsendevent -text "\Ca""
+"xvkbd -text "\Ca""
 	m:0x04 + c:38
-"xvkbd -xsendevent -text "\Cb""
+"xvkbd -text "\Cb""
 	m:0x04 + c:56
-"xvkbd -xsendevent -text "\Cc""
+"xvkbd -text "\Cc""
 	m:0x04 + c:54
-"xvkbd -xsendevent -text "\Cd""
+"xvkbd -text "\Cd""
 	m:0x04 + c:40
-"xvkbd -xsendevent -text "\Ce""
+"xvkbd -text "\Ce""
 	m:0x04 + c:26
-"xvkbd -xsendevent -text "\Cf""
+"xvkbd -text "\Cf""
 	m:0x04 + c:41
-"xvkbd -xsendevent -text "\Cg""
+"xvkbd -text "\Cg""
 	m:0x04 + c:42
-"xvkbd -xsendevent -text "\Ch""
+"xvkbd -text "\Ch""
 	m:0x04 + c:43
-"xvkbd -xsendevent -text "\Ci""
+"xvkbd -text "\Ci""
 	m:0x04 + c:31
-"xvkbd -xsendevent -text "\Cj""
+"xvkbd -text "\Cj""
 	m:0x04 + c:44
-"xvkbd -xsendevent -text "\Ck""
+"xvkbd -text "\Ck""
 	m:0x04 + c:45
-"xvkbd -xsendevent -text "\Cl""
+"xvkbd -text "\Cl""
 	m:0x04 + c:46
-"xvkbd -xsendevent -text "\Cm""
+"xvkbd -text "\Cm""
 	m:0x04 + c:58
-"xvkbd -xsendevent -text "\Cn""
+"xvkbd -text "\Cn""
 	m:0x04 + c:57
-"xvkbd -xsendevent -text "\Co""
+"xvkbd -text "\Co""
 	m:0x04 + c:32
-"xvkbd -xsendevent -text "\Cp""
+"xvkbd -text "\Cp""
 	m:0x04 + c:33
-"xvkbd -xsendevent -text "\Cq""
+"xvkbd -text "\Cq""
 	m:0x04 + c:24
-"xvkbd -xsendevent -text "\Cr""
+"xvkbd -text "\Cr""
 	m:0x04 + c:27
-"xvkbd -xsendevent -text "\Cs""
+"xvkbd -text "\Cs""
 	m:0x04 + c:39
-"xvkbd -xsendevent -text "\Ct""
+"xvkbd -text "\Ct""
 	m:0x04 + c:28
-"xvkbd -xsendevent -text "\Cu""
+"xvkbd -text "\Cu""
 	m:0x04 + c:30
-"xvkbd -xsendevent -text "\Cv""
+"xvkbd -text "\Cv""
 	m:0x04 + c:55
-"xvkbd -xsendevent -text "\Cw""
+"xvkbd -text "\Cw""
 	m:0x04 + c:25
-"xvkbd -xsendevent -text "\Cx""
+"xvkbd -text "\Cx""
 	m:0x04 + c:53
-"xvkbd -xsendevent -text "\Cy""
+"xvkbd -text "\Cy""
 	m:0x04 + c:29
-"xvkbd -xsendevent -text "\Cz""
+"xvkbd -text "\Cz""
 	m:0x04 + c:52
 
-"xvkbd -xsendevent -text "\Aa""
+"xvkbd -text "\Aa""
 	m:0x08 + c:38
-"xvkbd -xsendevent -text "\Ab""
+"xvkbd -text "\Ab""
 	m:0x08 + c:56
-"xvkbd -xsendevent -text "\Ac""
+"xvkbd -text "\Ac""
 	m:0x08 + c:54
-"xvkbd -xsendevent -text "\Ad""
+"xvkbd -text "\Ad""
 	m:0x08 + c:40
-"xvkbd -xsendevent -text "\Ae""
+"xvkbd -text "\Ae""
 	m:0x08 + c:26
-"xvkbd -xsendevent -text "\Af""
+"xvkbd -text "\Af""
 	m:0x08 + c:41
-"xvkbd -xsendevent -text "\Ag""
+"xvkbd -text "\Ag""
 	m:0x08 + c:42
-"xvkbd -xsendevent -text "\Ah""
+"xvkbd -text "\Ah""
 	m:0x08 + c:43
-"xvkbd -xsendevent -text "\Ai""
+"xvkbd -text "\Ai""
 	m:0x08 + c:31
-"xvkbd -xsendevent -text "\Aj""
+"xvkbd -text "\Aj""
 	m:0x08 + c:44
-"xvkbd -xsendevent -text "\Ak""
+"xvkbd -text "\Ak""
 	m:0x08 + c:45
-"xvkbd -xsendevent -text "\Al""
+"xvkbd -text "\Al""
 	m:0x08 + c:46
-"xvkbd -xsendevent -text "\Am""
+"xvkbd -text "\Am""
 	m:0x08 + c:58
-"xvkbd -xsendevent -text "\An""
+"xvkbd -text "\An""
 	m:0x08 + c:57
-"xvkbd -xsendevent -text "\Ao""
+"xvkbd -text "\Ao""
 	m:0x08 + c:32
-"xvkbd -xsendevent -text "\Ap""
+"xvkbd -text "\Ap""
 	m:0x08 + c:33
-"xvkbd -xsendevent -text "\Aq""
+"xvkbd -text "\Aq""
 	m:0x08 + c:24
-"xvkbd -xsendevent -text "\Ar""
+"xvkbd -text "\Ar""
 	m:0x08 + c:27
-"xvkbd -xsendevent -text "\As""
+"xvkbd -text "\As""
 	m:0x08 + c:39
-"xvkbd -xsendevent -text "\At""
+"xvkbd -text "\At""
 	m:0x08 + c:28
-"xvkbd -xsendevent -text "\Au""
+"xvkbd -text "\Au""
 	m:0x08 + c:30
-"xvkbd -xsendevent -text "\Av""
+"xvkbd -text "\Av""
 	m:0x08 + c:55
-"xvkbd -xsendevent -text "\Aw""
+"xvkbd -text "\Aw""
 	m:0x08 + c:25
-"xvkbd -xsendevent -text "\Ax""
+"xvkbd -text "\Ax""
 	m:0x08 + c:53
-"xvkbd -xsendevent -text "\Ay""
+"xvkbd -text "\Ay""
 	m:0x08 + c:29
-"xvkbd -xsendevent -text "\Az""
+"xvkbd -text "\Az""
 	m:0x08 + c:52
