@@ -4,7 +4,7 @@
         Alt+F10
 "xkb-switch -s "rs(latin)"; echo U > /tmp/i3statusP"
         Alt+F11
-""xkb-switch -s "rs(yz)"; echo U > /tmp/i3statusP"
+"xkb-switch -s "rs(yz)"; echo U > /tmp/i3statusP"
         Alt+F12
 
 "xkb-switch -s us; echo U > /tmp/i3statusP"
