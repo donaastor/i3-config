@@ -16,7 +16,7 @@ order += "time"
 
 disk "/" {
 	format = "disk: %used"
-	prefix_type = custom
+	prefix_type = "custom"
 }
 
 cpu_usage {
