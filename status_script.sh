@@ -15,6 +15,11 @@ do
 	if [ ${lo:$lol} = "/" ]; then
 		lo=${lo:0:$lol}
 	fi
+#	  soviet boost:
+	if [ "$lo" == "ru" ]; then
+		lo="CCCP"
+	fi
+#	  boosted!
 	if [ "$line" == "U" ]; then
 		echo $pref$cpref$lo$"\"},"$postf
 	else
