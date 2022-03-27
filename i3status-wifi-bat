@@ -1,0 +1,68 @@
+general {
+	output_format = "i3bar"
+	interval = 1
+	separator = " | "
+	colors = true
+	color_good = "#00FF00"
+	color_bad = "#FF0000"
+}
+
+order += "wireless wlan0"
+order += "ethernet _first_"
+order += "cpu_temperature 0"
+order += "cpu_temperature 1"
+order += "cpu_usage"
+order += "memory"
+order += "disk /"
+order += "time"
+
+disk "/" {
+	format = "disk: %used"
+	prefix_type = "custom"
+}
+
+cpu_usage {
+	format = "cpu: %usage"
+	max_threshold = 80
+	degraded_threshold = 60
+}
+
+cpu_temperature 0 {
+	format = "cpu1: %degrees"
+	max_threshold = 42
+	path = "/sys/class/hwmon/hwmon1/temp3_input"
+}
+
+cpu_temperature 1 {
+	format = "cpu2: %degrees"
+	max_threshold = 42
+	path = "/sys/class/hwmon/hwmon1/temp4_input"
+}
+
+memory {
+	format = "ram: %used/%total"
+	unit = "auto"
+	decimals = 1
+}
+
+wireless wlan0 {
+	format_up = "W: %ip (%essid, %quality)"
+	format_down = "W"
+}
+
+ethernet _first_ {
+	format_up = "E: %ip (%speed)"
+	format_down = "E"
+}
+
+battery 1 {
+	format = "%percentage"
+	low_threshold = 15
+	threshold_type = "percentage"
+	path = "/sys/class/power_supply/BAT%d/uevent"
+	format_percentage: "%.01f%s"
+}
+
+time {
+	format = "%a %Y-%m-%d %H:%M:%S"
+}
