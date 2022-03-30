@@ -7,9 +7,7 @@ fi
 i3status --config /home/korsic/.config/i3/i3status > /tmp/i3statusP &
 cpref="[{\"name\":\"keyboard layout\",\"markup\":\"none\",\"full_text\":\""
 
-(while :
-do
-	read line
+getlo(){
 	lo=$(xkblayout-state print %s/%v)
 	lol=${#lo}-1
 	if [ ${lo:$lol} = "/" ]; then
@@ -20,17 +18,27 @@ do
 		lo="CCCP"
 	fi
 #	  boosted!
-	if [ "$line" == "U" ]; then
+}
+
+(while :
+do
+	read line
+	if [ "$line" = "" ]; then
+		break
+	elif [ "$line" == "U" ]; then
+		getlo
 		echo $pref$cpref$lo$"\"},"$postf
 	else
 		poc=${line:0:2}
 		if [ "$poc" == "[{" ]; then
 			pref=""
 			postf="${line:1}"
+			getlo
 			echo $pref$cpref$lo$"\"},"$postf
 		elif [ "$poc" == ",[" ]; then
 			pref=","
 			postf="${line:2}"
+			getlo
 			echo $pref$cpref$lo$"\"},"$postf
 		else
 			echo $line
