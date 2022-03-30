@@ -2,11 +2,13 @@
 #include <vector>
 #include <iostream>
 #include <sstream>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+#include <unistd.h>
 #include <X11/Xlib.h>
 #include <X11/XKBlib.h>
 #include <X11/extensions/XKBrules.h>
-#include <fcntl.h>
-#include <unistd.h>
 
 using namespace std;
 
@@ -177,6 +179,11 @@ int main(){
 	kb::string_vector syms;
 	kb::XKeyboard xkb(1);
 	xkb.open_display();
+	struct stat buffer;
+	int postojanje=stat("/tmp/i3statusP",&buffer);
+	printf("%d\n",postojanje);
+	if(postojanje!=0)
+		mkfifo("/tmp/i3statusP",0666);
 	int fdw=open("/tmp/i3statusP",O_RDWR|O_NONBLOCK);
 	const char *nru="U\n";
 	while(true){
