@@ -1,20 +1,20 @@
-"xkb-switch -s us; echo U > /tmp/i3statusP"
-        Alt+F9
-"xkb-switch -s ru; echo U > /tmp/i3statusP"
-        Alt+F10
-"xkb-switch -s "rs(latin)"; echo U > /tmp/i3statusP"
-        Alt+F11
-"xkb-switch -s "rs(yz)"; echo U > /tmp/i3statusP"
-        Alt+F12
+"xkb-switch -s us"
+	Alt+F9
+"xkb-switch -s ru"
+	Alt+F10
+"xkb-switch -s "rs(latin)""
+	Alt+F11
+"xkb-switch -s "rs(yz)""
+	Alt+F12
 
-"xkb-switch -s us; echo U > /tmp/i3statusP"
-        Alt+KP_Insert
-"xkb-switch -s ru; echo U > /tmp/i3statusP"
-        Alt+KP_End
-"xkb-switch -s "rs(latin)"; echo U > /tmp/i3statusP"
-        Alt+KP_Down
-"xkb-switch -s "rs(yz)"; echo U > /tmp/i3statusP"
-        Alt+KP_Next
+"xkb-switch -s us"
+	Alt+KP_Insert
+"xkb-switch -s ru"
+	Alt+KP_End
+"xkb-switch -s "rs(latin)""
+	Alt+KP_Down
+"xkb-switch -s "rs(yz)""
+	Alt+KP_Next
 
 "flameshot gui"
 	Print
