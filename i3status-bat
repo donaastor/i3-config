@@ -7,8 +7,6 @@ general {
 	color_bad = "#FF0000"
 }
 
-order += "cpu_temperature 0"
-order += "cpu_temperature 1"
 order += "cpu_usage"
 order += "memory"
 order += "disk /"
