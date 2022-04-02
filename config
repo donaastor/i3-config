@@ -87,7 +87,7 @@ set $k9 81
 set $kminus 82
 set $kplus 86
 
-set $rofi_run "rofi -modi drun,run -show drun -font \\"Inconsolata 23\\""
+set $rofi_run "rofi -modi drun,run -show drun -font \\"Inconsolata 50\\""
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -112,8 +112,10 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
+exec_always --no-startup-id xkb-switch --i3
+# exec_always --no-startup-id /opt/kbswtb
+
 default_border none
-#default_border pixel 2
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -257,6 +259,7 @@ bindcode $mod+Shift+$kE exec i3-msg exit
 
 # resize window (you can also use the mouse for that)
 set $move_step 2
+set $move_px 48
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
 
@@ -266,10 +269,10 @@ mode "resize" {
         # Pressing down will grow the window’s height.
 
         # same bindings, but for the arrow keys
-        bindsym Left resize shrink width $move_step px or $move_step ppt
-        bindsym Down resize grow height $move_step px or $move_step ppt
-        bindsym Up resize shrink height $move_step px or $move_step ppt
-        bindsym Right resize grow width $move_step px or $move_step ppt
+        bindsym Left resize shrink width $move_px px or $move_step ppt
+        bindsym Down resize grow height $move_px px or $move_step ppt
+        bindsym Up resize shrink height $move_px px or $move_step ppt
+        bindsym Right resize grow width $move_px px or $move_step ppt
 
         # back to normal: Enter or Escape or $mod+r
         bindsym Return mode "default"
