@@ -28,18 +28,6 @@ cpu_usage {
 	degraded_threshold = 60
 }
 
-cpu_temperature 0 {
-	format = "cpu1: %degrees"
-	max_threshold = 42
-	path = "/sys/class/hwmon/hwmon1/temp3_input"
-}
-
-cpu_temperature 1 {
-	format = "cpu2: %degrees"
-	max_threshold = 42
-	path = "/sys/class/hwmon/hwmon1/temp4_input"
-}
-
 memory {
 	format = "ram: %used/%total"
 	unit = "auto"
