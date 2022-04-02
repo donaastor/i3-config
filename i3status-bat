@@ -49,7 +49,7 @@ battery 1 {
 	low_threshold = 15
 	threshold_type = "percentage"
 	path = "/sys/class/power_supply/BAT%d/uevent"
-	format_percentage: "%.01f%s"
+	format_percentage = "%.01f%s"
 }
 
 time {
