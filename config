@@ -87,7 +87,7 @@ set $k9 81
 set $kminus 82
 set $kplus 86
 
-set $rofi_run "rofi -modi drun,run -show drun -font \\"Inconsolata 50\\""
+set $rofi_run "rofi -modi drun,run -show drun -font \\"Inconsolata 23\\""
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
