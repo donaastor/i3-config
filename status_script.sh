@@ -4,7 +4,7 @@
 if [[ ! -p "/tmp/i3statusP" ]]; then
 	mkfifo "/tmp/i3statusP"
 fi
-i3status --config /home/korsic/.config/i3/i3status > /tmp/i3statusP &
+i3status --config ~/.config/i3/i3status > /tmp/i3statusP &
 cpref="[{\"name\":\"keyboard layout\",\"markup\":\"none\",\"full_text\":\""
 
 getlo(){
