@@ -156,23 +156,6 @@ namespace kb{
 		XkbGetState(_display, _deviceId, &xkbState);
 		return static_cast<int>(xkbState.group);
 	}
-
-	// returns true if symbol is ok
-	bool filter(const string_vector& nonsyms, const std::string& symbol){
-		if(symbol.empty())
-			return false;
-
-		// Filter out all prohibited words
-		string_vector::const_iterator r = find(nonsyms.begin(), nonsyms.end(), symbol);
-		if(r != nonsyms.end())
-			return false;
-
-		// Filter out all numbers groups started with number
-		if(isdigit(symbol[0]))
-			return false;
-
-		return true;
-	}
 }
 
 int main(){
