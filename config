@@ -135,6 +135,7 @@ bindcode Ctrl+Mod1+$kT exec alacritty
 bindcode Ctrl+Mod1+$kL exec lyx
 bindcode Ctrl+Mod1+$kP exec xournalpp
 bindcode Ctrl+Mod1+$kD exec $rofi_run
+bindcode Ctrl+Mod1+$kO exec libreoffice
 
 # start a terminal
 #	bindsym $mod+Return exec i3-sensible-terminal
