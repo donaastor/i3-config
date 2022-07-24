@@ -1,2 +1,5 @@
 # i3-config
-Ok, so I've got no idea about legal stuff - not my profession, not my way to improve the world -> not important. Still, I'd like to note how appreciative I am of the fact that the authors of the original project (this one: https://github.com/grwlf/xkb-switch) were generous enough to put that very nice licence on the project. I copied half of the code from it and modified to suit my needs. I thank them for that. Thus I want to (and legally should I guess) be the same kind of author and allow anyone to do whatever they want with my code and improve the world with it however they can. All the best
+If you want to use this code:<br>
+First, don't because it is a very specific thing made to work with my own system configuration.<br>
+If you are still determined then fine:<br>
+Ok, so this code is copied from this project: https://github.com/grwlf/xkb-switch. The original code is lincenced under GPL-3 licence. I only deleted some lines from the original code and modified the main() function. So, the main() function is all mine, but I did reuse some of the original ideas in it too. I suppose I described how I altered this code and thus fulfilled my legal duties.
