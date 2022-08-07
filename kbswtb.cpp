@@ -1,16 +1,7 @@
-#include <cstring>
-#include <vector>
-#include <iostream>
-#include <sstream>
-#include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <unistd.h>
-#include <X11/Xlib.h>
 #include <X11/XKBlib.h>
-#include <X11/extensions/XKBrules.h>
-
-using namespace std;
 
 int main(){
 	
