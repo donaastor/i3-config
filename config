@@ -112,7 +112,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
-exec_always --no-startup-id xkb-switch --i3
+exec_always --no-startup-id bash -c '(sleep 2 && xkb-switch --i3) &'
 # exec_always --no-startup-id /opt/kbswtb
 
 default_border none
