@@ -9,7 +9,7 @@ if ! [ -e $thc ]; then
   for i in {0..3}; do
     if [ -e $cl0$i$cl1 ]; then
       if [ $cl0$i$cl1 = Tccd1 ]; then
-	ln -s $cl0$i $thc
+        ln -s $cl0$i $thc
         break
       fi
     fi
