@@ -20,28 +20,37 @@ getlo(){
 #	  boosted!
 }
 
-(while :
-do
-	read line
-	if [ "$line" = "" ]; then
-		break
-	elif [ "$line" == "U" ]; then
-		getlo
-		echo $pref$cpref$lo$"\"},"$postf
-	else
-		poc=${line:0:2}
-		if [ "$poc" == "[{" ]; then
-			pref=""
-			postf="${line:1}"
-			getlo
-			echo $pref$cpref$lo$"\"},"$postf
-		elif [ "$poc" == ",[" ]; then
-			pref=","
-			postf="${line:2}"
-			getlo
-			echo $pref$cpref$lo$"\"},"$postf
-		else
-			echo $line
-		fi
-	fi
+setrm(){
+  tf="$(sed -n 's/^.*ram: \([.0-9]*\).*$/\1/p' <<<$postf)"
+  rl=$((7-${#tf}))
+  ijs="    "
+  ijs="${ijs:0:rl}"
+  postf="$(sed "s/ram:/${ijs}ram:/" <<<$postf)"
+}
+
+(while :; do
+  read line
+  if [ "$line" = "" ]; then
+    break
+  elif [ "$line" = U ]; then
+    getlo
+    echo $pref$cpref$lo"\"},""$postf"
+  else
+    poc=${line:0:2}
+    if [ "$poc" = "[{" ]; then
+      pref=""
+      postf="${line:1}"
+      getlo
+      setrm
+      echo $pref$cpref$lo"\"},""$postf"
+    elif [ "$poc" = ",[" ]; then
+      pref=","
+      postf="${line:2}"
+      getlo
+      setrm
+      echo $pref$cpref$lo"\"},""$postf"
+    else
+      echo $line
+    fi
+  fi
 done) < /tmp/i3statusP
