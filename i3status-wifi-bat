@@ -29,7 +29,7 @@ cpu_usage {
 memory {
 	format = "ram: %used/%total"
 	unit = "auto"
-	decimals = 1
+	decimals = 2
 }
 
 wireless wlan0 {
